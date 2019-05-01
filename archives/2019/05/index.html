@@ -1,21 +1,20 @@
 extends includes/layout
 
 block content
+    - var categoriesList = list_categories({ show_count: false })
+    - var tagsList = list_tags({ show_count: false })
+    - var archivesList = list_archives({ show_count: false })
 
-    section#wrapper.home
-
-        div.archive
-            h3!='~yeah~baby~'
-            each item in site.posts.sort('date', -1).toArray()
-              - var postTitle = item.title || 'No Title'
-              - var createDate = date(item.date, 'MMM DD')
-              ul
-                  div.post-item
-                      div.post-time=createDate
-                      if item.link
-                          a.post-link(href=url_for(item.link))= postTitle
-                      else
-                          a.post-link(href=url_for(item.path))= postTitle
-
-
+    div.archive
+      each post in site.posts.sort('date', -1).toArray()
+        .archive-item
+          div
+            if post.link
+                a.archive-item__link(href=url_for(post.link) target="_blank")
+                  span.archive-item__link__time(datetime=date_xml(post.date))= date(post.date)
+                  span.archive-item__link__title=post.title || 'No Title'
+            else
+                a.archive-item__link(href=url_for(post.path))
+                  span.archive-item__link__time(datetime=date_xml(post.date))= date(post.date)
+                  span.archive-item__link__title=post.title || 'No Title'
 

@@ -1,100 +1,142 @@
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-
+pre,
+.highlight {
+  overflow: auto;
+  margin: 20px 0;
+  padding: 15px;
+  font-size: $code-font-size;
+  color: #4d4d4c;
+  background: #f7f7f7;
+  line-height: $line-height-code-block;
+}
+pre,
 code {
-    background: #fff;
-    font-size: 11px;
-    /*font-weight: 100;*/
-    padding: 4px;
-    border: none;
-    box-shadow: inset 0 0 0 1px #E4EBF2;
-    border-radius: 4px;
-    overflow: scroll;
-    font-family: 'Menlo', 'Monaco', Courier, monospace;
+  font-family: $code-font-family;
 }
-
-
+code {
+  padding: 2px 4px;
+  word-wrap: break-all;
+  color: #4d4d4c;
+  background: #f7f7f7;
+  border-radius: $code-border-radius;
+  font-size: $code-font-size;
+}
 pre code {
-    font-size: 11px;
-    word-wrap: break-word;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
-    padding: 16px;
-    padding-bottom: 14px;
-    display: block;
-    color: #808080;
-    background: #fff;
-    border: none;
-    box-shadow: inset 0 0 0 1px #E4EBF2;
-    border-radius: 4px;
-    overflow: auto;
+  padding: 0;
+  color: #4d4d4c;
+  background: none;
+  text-shadow: none;
 }
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-  color: #8e908c;
+.highlight pre {
+  border: none;
+  margin: 0;
+  padding: 1px;
 }
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #c82829;
+.highlight table {
+  margin: 0;
+  width: auto;
+  border: none;
 }
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #f5871f;
+.highlight td {
+  border: none;
+  padding: 0;
 }
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-  color: #eab700;
+.highlight figcaption {
+  font-size: 1em;
+  color: #4d4d4c;
+  line-height: 1em;
+  margin-bottom: 1em;
 }
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #718c00;
+.highlight figcaption a {
+  float: right;
+  color: #4d4d4c;
 }
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-  color: #4271ae;
+.highlight figcaption a:hover {
+  border-bottom-color: #4d4d4c;
 }
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
+.highlight .gutter pre {
+  color: $grey-dim;
+  text-align: right;
+  padding-right: 20px;
+}
+.highlight .line {
+  height: 20px;
+}
+.gutter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.gist table {
+  width: auto;
+}
+.gist table td {
+  border: none;
+}
+pre .deletion {
+  background: #fdd;
+}
+pre .addition {
+  background: #dfd;
+}
+pre .meta {
   color: #8959a8;
 }
-
-code.hljs {
-  display: block;
-  white-space: pre;
-  overflow-x: auto;
-  word-wrap: normal;
+pre .comment {
+  color: #8e908c;
 }
-
-.hljs-emphasis {
-  font-style: italic;
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #c82829;
 }
-
-.hljs-strong {
-  font-weight: bold;
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant,
+pre .command,
+pre .builtin-name {
+  color: #f5871f;
+}
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata,
+pre .special,
+pre .number,
+pre .formula {
+  color: #718c00;
+}
+pre .title,
+pre .css .hexcolor {
+  color: #3e999f;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #4271ae;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #8959a8;
 }
