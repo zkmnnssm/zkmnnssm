@@ -972,11 +972,15 @@ h6 {
         color: #4D89FB;
         transform: scale(1.1); }
 
+/* open-sans-regular */
 @font-face {
-  font-family: 'iconfont';
-  /* project id 96542 */
-  src: url("//at.alicdn.com/t/font_8gx15cdpiaz41jor.eot");
-  src: url("//at.alicdn.com/t/font_8gx15cdpiaz41jor.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_8gx15cdpiaz41jor.woff") format("woff"), url("//at.alicdn.com/t/font_8gx15cdpiaz41jor.ttf") format("truetype"), url("//at.alicdn.com/t/font_8gx15cdpiaz41jor.svg#iconfont") format("svg"); }
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: regular;
+  src: url("//lib.baomitu.com/fonts/open-sans/open-sans-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans"), local("OpenSans-Normal"), url("//lib.baomitu.com/fonts/open-sans/open-sans-regular.eot?#iefix") format("embedded-opentype"), url("//lib.baomitu.com/fonts/open-sans/open-sans-regular.woff2") format("woff2"), url("//lib.baomitu.com/fonts/open-sans/open-sans-regular.woff") format("woff"), url("//lib.baomitu.com/fonts/open-sans/open-sans-regular.ttf") format("truetype"), url("//lib.baomitu.com/fonts/open-sans/open-sans-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
 
 .iconfont {
   font-family: "iconfont" !important;
