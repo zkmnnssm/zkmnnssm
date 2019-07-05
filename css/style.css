@@ -520,8 +520,10 @@ h6 {
   padding: 40px 0; }
   .post + .post {
     border-top: 1px solid #eee; }
-  .post .post-excerpt img {
-    padding-top: .5em; }
+  .post .post-excerpt {
+    line-height: 28px; }
+    .post .post-excerpt img {
+      padding-top: .5em; }
   .post .post-header .post-title {
     margin: 0 0 10px;
     line-height: 1.4;
